@@ -1,7 +1,142 @@
 /*comentarios en css*/
 /* por cada proyecto una hoja de estilo*/
 /*sintaxis básicas de css*/
+/*3 selectores principales
+selector de etiqueta - el menos específico, es la etiqueta del html
+selector de class - nivel intermedio, se llama con el punto y el nombre de la clase .body - .cabecera
+selector de id - el más específico es un identificador único se llama con #
+*/
 
-/*body{
-    background-color: azure;
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700&family=Noto+Sans:ital,wght@0,100;1,100&display=swap');
+
+ *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ } 
+
+ /* estilado del cuerpo de la pág*/
+ .cuerpo{
+    background-color: #f5f4f7;
+    color: rgb(31, 36, 36);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    /*font-size: 1rem;*/
+    line-height: 1.5;
+}
+
+/*estilado del header*/
+.header {
+    background-color: rgb(41, 51, 51);
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    }
+
+/*estilado img codo codo*/
+.header .codo{
+   height: 80%;
+   
+}
+ /*estilado del titulo Conf BsAs*/
+.tittleheader{
+    display: inline-block;
+    
+}
+
+    /*estilado de la navegación del header*/
+    .header .navHeader {
+       display: inline-block;  
+    }
+
+ .header .navHeader .eti{
+text-decoration: none;
+
+font-family: "Inter";
+font-weight: 600;
+color: darkgray;
+ }
+
+ .header .navHeader .comp{
+    color: rgb(5, 131, 5);
+ }
+
+
+/*    .conferencia{
+    color: white;
+}*/
+
+.quieroOrador{
+    background-color: gray ;
+    color: white;
+}
+
+
+.compraticket{
+    background-color: rgb(17, 155, 17);
+    color: white;
+    height: 30px;
+    
+    border-radius: 5px;
+}
+.padrecard {
+
+    margin-top:50px;
+    text-align: left;
+    width: 80%;
+    height:100vh;
+    margin: 0 auto;
+}
+.card {
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height:75%;
+    border:1px solid rgb(123, 123, 123);
+    border-radius: 5px;
+}
+.card img{
+    width:100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+.cardBody{
+    margin:15px;  
+}
+.cardBody .java {
+    display: inline-block;
+    background-color: rgb(240, 240, 6);
+}
+.cardBody h5 {
+    
+    background-color: rgb(55, 55, 247);
+}
+.cardBody .nego{
+    display: inline-block;
+    background-color: gray;
+}
+
+.cardBody .star{
+    display: inline-block;
+    background-color: rgb(221, 49, 49);
+}
+
+.fecha {
+    background-color: rgb(76, 78, 78);
+    color: white;
+}
+
+footer{
+background-color: rgb(28, 92, 92);
+color: white;
+height: 90px;
+
+}
+div a {
+    color: white;
+    font-weight: 600;
+    
+    text-decoration: none;
 }
