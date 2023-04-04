@@ -101,7 +101,7 @@ text-align: center;
     display: inline-block;
     background-color:white;
     width:30%;
-    height:75%;
+    height:80%;
     border:1px solid rgb(219, 217, 217);
     border-radius: 5px;
 }
@@ -119,28 +119,28 @@ text-align: center;
     background-color: rgb(240, 240, 6);
 }
 /*estilado de lugar y fecha*/
-.lugarFecha {
+.lugar {
     width: 100%;
-    height:100vh;
+    height:69vh;
     margin: 0 auto;   
+    background-color: blueviolet;
 }
 
-.lugarFecha img{
-    width:40%;
-    height: 55%;
+.lugar img{
+    display: inline-block;
+    width:50%;
+    height: 100%;
     object-fit: cover;
+   
 }
-.lugarFecha .fecha {
+.lugar div  {
     
     display: inline-block;
     background-color: rgb(76, 78, 78);
     color: white;
 }
 
-.lugarFecha .fecha h2{
-    display: inline-block;
-    text-align: right;
-}
+
 footer{
 background-color: rgb(28, 92, 92);
 color: white;
