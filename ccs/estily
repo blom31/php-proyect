@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    /*
+    
+    line-height: 1.5;
+  */
+}
+/*
+html{
+    font-size:62.5%; /*es el % con respecto a la fuente que eligio el user 16px = 10px
+}*/
+.textoConferencia{
+    font-size:25px;/*la unidad de media pixeles, es una unidad absoluta*/
+    /*unidades de medida relativas
+    rem - relativa, a el tamaño de fuente que eligio el user en el navegador 1rem = 16px, 1rem = 20px
+    em
+    %
+    fr - grid 
+    vh
+    vw*/
+    font-size: 2rem; /*32px*/
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;/*negrita*/
+    display:none;
+    display:block;
+    display:inline;
+    display:inline-block;
+}
+
+.padreCards{
+    margin-top:50px;
+    text-align: left;
+    width: 80%;
+    height:100vh;
+    margin: 0 auto;
+}
+
+.card{
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height:75%;
+    border:1px solid rgb(123, 123, 123);
+    border-radius: 5px;
+}
+
+.card img{
+    width:100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+.cardBody{
+    margin:15px;
+}

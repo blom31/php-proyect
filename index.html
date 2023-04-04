@@ -11,20 +11,20 @@
 
 </head>
 
-<body class="cuerpo">
+<body>
     <!-- esta es la etiqueta semántica header es mi cabecera-->
     <header>
         <div class="header"> <!-- es una etiqueta contenedora de tipo generico, agrupa cosas, "comodín"-->
-            <img class="codo" src="./assets/img/codoacodo.png" alt="logo de codo a codo"> <!-- incluir una imagen-->
-            <h2 class="tittleheader"> Conf Bs.As.<!-- título -->
+            <img src="./assets/img/codoacodo.png" alt="logo de codo a codo"> <!-- incluir una imagen-->
+            <h2> Conf Bs.As.<!-- título -->
             </h2>
-            <nav class="navHeader">
+            <nav>
                 <!-- esta etiqueta contiene los links o hipervinculos, siempre que veamoes esta etiqueta indica que hay una navegación-->
 
-                <a class="eti" href="#conferencia">La Conferencia </a>
-                <a class="eti" href="#oradores"> Los Oradores </a>
-                <a class="eti" href="#lugar"> El Lugar y la Fecha </a>
-                <a class="eti" href="#conviertete"> Conviértete en Orador </a>
+                <a href="#conferencia">La Conferencia </a>
+                <a href="#oradores"> Los Oradores </a>
+                <a href="#lugar"> El Lugar y la Fecha </a>
+                <a href="#conviertete"> Conviértete en Orador </a>
                 <a class="comp" href="./pages/comprar.html">Comprar Tickets</a>
             </nav>
         </div>
@@ -37,57 +37,65 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptate optio ad assumenda libero,
                 Voluptate optio ad assumenda libero,
-                ae cum eos, exercitationem, dolor molestiae
+                ae cum eos, exercitationem, dolor molestiae Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Non delectus odio nulla! Similique tenetur doloremque
+                repudiandae quod placeat alias aliquam natus distinctio cupiditate. Quidem unde rem
+                ea alias maxime molestiae.
             </p>
-            <button class="quieroOrador" > Quiero ser Orador</button>
+            <button class="quieroOrador"> Quiero ser Orador</button>
             <button class="compraticket">Comprar Tickets</button>
         </section>
 
     </header>
     <!-- esta es la etiqueta semántica main de mi contenido principal-->
+    <!-- esta es la etiqueta semántica main de mi contenido principal-->
+<!-- esta es la etiqueta semántica main de mi contenido principal-->
+
     <main>
-        <section id="oradores"> <!--Se usal la etiqueta Section como contendedor debe tener un subtítulo-->
+        <section class="oradores" id="oradores">
+            <!--Se usal la etiqueta Section como contendedor debe tener un subtítulo-->
             <!--La etiqueta SPAN sirve para dar estilo a una pate del título o sub,. etiqueta contenedora en línea, herman del DIV-->
             <h2><span>Conoce a los </span> <br>Oradores</h2>
 
-            <div class="padrecard">
+            <div class="padreCards">
+
+
                 <div class="card">
-                    <img src="./assets/img/steve.jpg" alt="Steve jobs">
+                    <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
                     <div class="cardBody">
-                         <h5 class="java">JavaScrip</h5>
-                         <h5>React</h5>
-                            <h3>Steve Jobs</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Modi at enim numquam esse sint tenetur tempore impedit,
-                        eius dolores molestiae ad dolore perspiciatis a quo quia
-                        doloribus quam veniam consectetur?</p>
-                    </div>    
-                </div>
-                <div class="card">
-                    <img src="./assets/img/bill.jpg" alt="Bill Gate">
-                    <div></div>
-                    <div class="cardBody">
-                        <h5 class="java">JavaScrip</h5>
+                        <h5>JavaScript</h5>
                         <h5>React</h5>
-                           <h3>Steve Jobs</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                       Modi at enim numquam esse sint tenetur tempore impedit,
-                       eius dolores molestiae ad dolore perspiciatis a quo quia
-                       doloribus quam veniam consectetur?</p>
-                   </div>  
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
+                            voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
+                            quas est maiores dolor pariatur et?</p>
+                    </div>
+
                 </div>
                 <div class="card">
-                    <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
-                    <div></div>
+                    <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
                     <div class="cardBody">
-                        <h5 class="nego">Negocios</h5>
-                        <h5 class="star">Startup</h5>
-                           
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                       Modi at enim numquam esse sint tenetur tempore impedit,
-                       eius dolores molestiae ad dolore perspiciatis a quo quia
-                       doloribus quam veniam consectetur?</p>
-                   </div>  
+                        <h5>JavaScript</h5>
+                        <h5>React</h5>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
+                            voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
+                            quas est maiores dolor pariatur et?</p>
+                    </div>
+
+                </div>
+                <div class="card">
+
+                    <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                    <div class="cardBody">
+                        <h5>JavaScript</h5>
+                        <h5>React</h5>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
+                            voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
+                            quas est maiores dolor pariatur et?</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -95,18 +103,20 @@
 
         </section>
         <section id="lugar"><!--Sección de la fecha y el lugar-->
+            <div class="lugarFecha" >
+                <div>
+                    <img src="./assets/img/honolulu.jpg" alt="Img del lugar de la Conferencia">
+                </div>
 
-            <div>
-                <img src="./assets/img/honolulu.jpg" alt="Img del lugar de la Conferencia">
+                <div class="fecha">
+                    <h2>Bs. As. Octubre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
+                        voluptatum perferendis expedita consequuntur sed numquam, saepe voluptas,
+                    </p>
+                    <button>Conocé más</button>
+                </div>
             </div>
 
-            <div class="fecha">
-                <h2>Bs. As. Octubre</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
-                    voluptatum perferendis expedita consequuntur sed numquam, saepe voluptas,
-                </p>
-                <button>Conocé más</button>
-            </div>
         </section>
         <section id="conviertete"> <!--Seccion de conviertete en orador, formularios-->
 

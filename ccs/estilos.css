@@ -16,13 +16,12 @@ box-sizing: border-box;
  } 
 
  /* estilado del cuerpo de la pág*/
- .cuerpo{
-    background-color: #f5f4f7;
+ body {
     color: rgb(31, 36, 36);
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    /*font-size: 1rem;*/
-    line-height: 1.5;
+    /*font-size: 1rem;
+    line-height: 1.5;*/
 }
 
 /*estilado del header*/
@@ -35,54 +34,64 @@ box-sizing: border-box;
     }
 
 /*estilado img codo codo*/
-.header .codo{
+.header  img{
    height: 80%;
    
 }
  /*estilado del titulo Conf BsAs*/
-.tittleheader{
+.header h2{
     display: inline-block;
     
 }
 
     /*estilado de la navegación del header*/
-    .header .navHeader {
+   .header nav {
        display: inline-block;  
+      
     }
 
- .header .navHeader .eti{
+     /*estilado de la navegación del header */
+ .header nav a{
 text-decoration: none;
-
 font-family: "Inter";
 font-weight: 600;
 color: darkgray;
  }
 
- .header .navHeader .comp{
+  /*estilado de la navegación del header última palabra color verde*/
+ .header nav .comp{
     color: rgb(5, 131, 5);
  }
 
-
-/*    .conferencia{
-    color: white;
-}*/
-
+/*estilado del header titulo y texto blanco*/
+   .conferencia{
+    color: rgb(139, 18, 18);
+    text-align: right;
+}
+/*estilado del boton quiero ser orador */
 .quieroOrador{
     background-color: gray ;
     color: white;
+    border: solid 3px gray;
+    
 }
 
-
+/*estilado del boton comprar ticket*/
 .compraticket{
     background-color: rgb(17, 155, 17);
     color: white;
-    height: 30px;
-    
+    height: 20px;
     border-radius: 5px;
+    border: solid 3px rgb(17, 155, 17);
 }
-.padrecard {
 
-    margin-top:50px;
+.oradores h2 {
+text-align: center;
+}
+
+.padreCards {
+
+    margin-top:5000px;
     text-align: left;
     width: 80%;
     height:100vh;
@@ -93,7 +102,7 @@ color: darkgray;
     background-color:white;
     width:30%;
     height:75%;
-    border:1px solid rgb(123, 123, 123);
+    border:1px solid rgb(219, 217, 217);
     border-radius: 5px;
 }
 .card img{
@@ -109,25 +118,29 @@ color: darkgray;
     display: inline-block;
     background-color: rgb(240, 240, 6);
 }
-.cardBody h5 {
+/*estilado de lugar y fecha*/
+.lugarFecha {
+    width: 100%;
+    height:100vh;
+    margin: 0 auto;   
+}
+
+.lugarFecha img{
+    width:40%;
+    height: 55%;
+    object-fit: cover;
+}
+.lugarFecha .fecha {
     
-    background-color: rgb(55, 55, 247);
-}
-.cardBody .nego{
     display: inline-block;
-    background-color: gray;
-}
-
-.cardBody .star{
-    display: inline-block;
-    background-color: rgb(221, 49, 49);
-}
-
-.fecha {
     background-color: rgb(76, 78, 78);
     color: white;
 }
 
+.lugarFecha .fecha h2{
+    display: inline-block;
+    text-align: right;
+}
 footer{
 background-color: rgb(28, 92, 92);
 color: white;
