@@ -5,18 +5,22 @@
 selector de etiqueta - el menos específico, es la etiqueta del html
 selector de class - nivel intermedio, se llama con el punto y el nombre de la clase .body - .cabecera
 selector de id - el más específico es un identificador único se llama con #
+
+<script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+
+
 */
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700&family=Noto+Sans:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700&family=Noto+Sans:ital,wght@0,100;1,100&display=swap');
 
- *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
- } 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- /* estilado del cuerpo de la pág*/
- body {
+/* estilado del cuerpo de la pág*/
+body {
     color: rgb(31, 36, 36);
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -25,59 +29,68 @@ box-sizing: border-box;
 }
 
 /*estilado del header*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
+}
 .header {
     background-color: rgb(41, 51, 51);
     color: white;
     width: 100%;
     height: 100px;
     margin: 0 auto;
-    }
-
-/*estilado img codo codo*/
-.header  img{
-   height: 80%;
-   
-}
- /*estilado del titulo Conf BsAs*/
-.header h2{
-    display: inline-block;
     
 }
 
-    /*estilado de la navegación del header*/
-   .header nav {
-       display: inline-block;  
-      
-    }
+/*estilado img codo codo*/
+.header img {
+    height: 80%;
 
-     /*estilado de la navegación del header */
- .header nav a{
-text-decoration: none;
-font-family: "Inter";
-font-weight: 600;
-color: darkgray;
- }
+}
 
-  /*estilado de la navegación del header última palabra color verde*/
- .header nav .comp{
+/*estilado del titulo Conf BsAs*/
+.header h2 {
+    display: inline-block;
+
+}
+
+/*estilado de la navegación del header*/
+.header nav {
+    display: inline-block;
+
+}
+
+/*estilado de la navegación del header */
+.header nav a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: 600;
+    color: darkgray;
+}
+
+/*estilado de la navegación del header última palabra color verde*/
+.header nav .comp {
     color: rgb(5, 131, 5);
- }
+}
 
 /*estilado del header titulo y texto blanco*/
-   .conferencia{
+.conferencia {
     color: rgb(139, 18, 18);
     text-align: right;
 }
+
 /*estilado del boton quiero ser orador */
-.quieroOrador{
-    background-color: gray ;
+.quieroOrador {
+    background-color: gray;
     color: white;
     border: solid 3px gray;
-    
+
 }
 
 /*estilado del boton comprar ticket*/
-.compraticket{
+.compraticket {
     background-color: rgb(17, 155, 17);
     color: white;
     height: 20px;
@@ -86,71 +99,100 @@ color: darkgray;
 }
 
 .oradores h2 {
-text-align: center;
+    text-align: center;
 }
 
 .padreCards {
 
-    margin-top:5000px;
+    margin-top: 5000px;
     text-align: left;
     width: 80%;
-    height:100vh;
+    height: 110vh;
     margin: 0 auto;
 }
+
 .card {
     display: inline-block;
-    background-color:white;
-    width:30%;
-    height:80%;
-    border:1px solid rgb(219, 217, 217);
+    background-color: white;
+    width: 30%;
+    height: 80%;
+    border: 1px solid rgb(219, 217, 217);
     border-radius: 5px;
 }
-.card img{
-    width:100%;
-    height: 55%;
+
+.card img {
+    width: 100%;
+    height: 60%;
     object-fit: cover;
 }
 
-.cardBody{
-    margin:15px;  
-}
-.cardBody .java {
-    display: inline-block;
-    background-color: rgb(240, 240, 6);
-}
-/*estilado de lugar y fecha*/
-.lugar {
-    width: 100%;
-    height:69vh;
-    margin: 0 auto;   
-    background-color: blueviolet;
+.cardBody {
+    margin: 15px;
+
 }
 
-.lugar img{
+.cardBody h5 {
     display: inline-block;
-    width:50%;
+}
+
+/*estilado de lugar y fecha*/
+
+.lugaryfecha {
+
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.fecha {
+    display: inline-block;
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.fecha img {
+    display: inline-block;
+    width: 50%;
     height: 100%;
     object-fit: cover;
-   
-}
 
-.lugar div  {
-    
+}
+.fecha div h2 p button {
     display: inline-block;
-    background-color: rgb(76, 78, 78);
+    width: 50%;
+    height: 100%;
+}
+.conviertete {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+footer {
+    background-color: rgb(28, 92, 92);
     color: white;
+    height: 15vh;
+    text-align: center;
+    /*position: sticky;
+    bottom: 0px;
+    z-index: 10;*/
 }
 
-
-footer{
-background-color: rgb(28, 92, 92);
-color: white;
-height: 90px;
-
+.pie{
+    display: inline-block;
+    
 }
-div a {
+.pie a {
     color: white;
     font-weight: 600;
-    
     text-decoration: none;
+}
+.pie img{
+    
+   position: fixed;
+   bottom: 85px;   
+    right: 20px;
+    width: 3%;
 }
