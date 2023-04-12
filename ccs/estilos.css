@@ -28,39 +28,48 @@ body {
     line-height: 1.5;*/
 }
 
-/*estilado del header*/
-header{
+/*estilado del header esto era una prueba en caso de querer dejar la navegación fija*/
+/*header{
     position: sticky;
     top: 0px;
     z-index: 10;
 
-}
-.header {
-    background-color: rgb(41, 51, 51);
-    color: white;
+}*/
+.padreheader {
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.523), rgb(0, 0, 0, 0.523)), url("../assets/img/hawaii.jpg");
+    background-size: cover;
+    /* **** LAS PROPIEDADES DEL BACKGROUND COLOR SON COPIADAS DEL EJEMPLO -- DEBO PERSONALIZAR*/
+    background-position: center;
+    padding-right: 100px;
+    object-fit: cover;
     width: 100%;
-    height: 100px;
-    margin: 0 auto;
-    
+    height: 95vh;
+    /*display: flex;*/
+}
+
+.header {
+    background-color: #2f3131;
+    color: white;
+    width: 108%;
+    height: 13%;
+    /*display: inline-block; PROPIEDAD USADA ANTES DEL FLEXBOX*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /*estilado img codo codo*/
+/* DEBO MEJORAR LA CALIDAD DE LA IMAG*/
 .header img {
     height: 80%;
+
 
 }
 
 /*estilado del titulo Conf BsAs*/
-.header h2 {
-    display: inline-block;
 
-}
-
-/*estilado de la navegación del header*/
-.header nav {
-    display: inline-block;
-
-}
 
 /*estilado de la navegación del header */
 .header nav a {
@@ -68,6 +77,8 @@ header{
     font-family: "Inter";
     font-weight: 600;
     color: darkgray;
+    
+    /*word-spacing: 5px;*/
 }
 
 /*estilado de la navegación del header última palabra color verde*/
@@ -77,15 +88,30 @@ header{
 
 /*estilado del header titulo y texto blanco*/
 .conferencia {
-    color: rgb(139, 18, 18);
+    padding-top: 15%;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5;
+}
+
+.confe_hijo {
+    height: 90%;
+    width: 40%;
     text-align: right;
+
 }
 
 /*estilado del boton quiero ser orador */
 .quieroOrador {
-    background-color: gray;
+    background-color: transparent;
     color: white;
-    border: solid 3px gray;
+    border: solid 1px rgb(180, 179, 179);
+    border-radius: 3px;
+    height: 25px;
+
+
 
 }
 
@@ -93,22 +119,30 @@ header{
 .compraticket {
     background-color: rgb(17, 155, 17);
     color: white;
-    height: 20px;
+    height: 25px;
     border-radius: 5px;
     border: solid 3px rgb(17, 155, 17);
+
 }
 
 .oradores h2 {
     text-align: center;
+    margin: 2%;
+}
+
+.oradores .conoce {
+    font-weight: 500;
+    font-size: 15px
 }
 
 .padreCards {
 
-    margin-top: 5000px;
+    margin-top: 1000px;
     text-align: left;
     width: 80%;
     height: 110vh;
     margin: 0 auto;
+
 }
 
 .card {
@@ -137,33 +171,25 @@ header{
 
 /*estilado de lugar y fecha*/
 
-.lugaryfecha {
-
+.padrefecha {
+    margin-top: 1000px;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     margin: 0 auto;
-
+    display: flex;
 }
 
 .fecha {
     display: inline-block;
-    width: 100%;
-    height: 70vh;
-    margin: 0 auto;
 }
 
 .fecha img {
-    display: inline-block;
     width: 50%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
+}
 
-}
-.fecha div h2 p button {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-}
+
 .conviertete {
     text-align: center;
     margin-top: 15px;
@@ -175,24 +201,28 @@ footer {
     color: white;
     height: 15vh;
     text-align: center;
+
     /*position: sticky;
     bottom: 0px;
     z-index: 10;*/
 }
 
-.pie{
+.pie {
     display: inline-block;
-    
+
 }
+
 .pie a {
     color: white;
     font-weight: 600;
     text-decoration: none;
+
 }
-.pie img{
-    
-   position: fixed;
-   bottom: 85px;   
+
+.pie img {
+
+    position: fixed;
+    bottom: 85px;
     right: 20px;
     width: 3%;
 }

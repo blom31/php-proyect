@@ -14,37 +14,48 @@
 <body>
     <!-- esta es la etiqueta semántica header es mi cabecera-->
     <header>
-        <div class="header"> <!-- es una etiqueta contenedora de tipo generico, agrupa cosas, "comodín"-->
-            <img src="./assets/img/codoacodo.png" alt="logo de codo a codo"> <!-- incluir una imagen-->
-            <h2> Conf Bs.As.<!-- título -->
-            </h2>
-            <nav>
-                <!-- esta etiqueta contiene los links o hipervinculos, siempre que veamoes esta etiqueta indica que hay una navegación-->
+        <div class="padreheader">
+            <div class="header"> <!-- es una etiqueta contenedora de tipo generico, agrupa cosas, "comodín"-->
 
-                <a href="#conferencia">La Conferencia </a>
-                <a href="#oradores"> Los Oradores </a>
-                <a href="#lugar"> El Lugar y la Fecha </a>
-                <a href="#conviertete"> Conviértete en Orador </a>
-                <a class="comp" href="./pages/comprar.html">Comprar Tickets</a>
-            </nav>
+                <img src="./assets/img/codoacodo.png" alt="logo de codo a codo"> <!-- incluir una imagen-->
+
+                <h2> Conf Bs.As.<!-- título -->
+                </h2 >
+
+                <nav>
+                    <!-- esta etiqueta contiene los links o hipervinculos, siempre que veamoes esta etiqueta indica que hay una navegación-->
+                    <a href="#conferencia">La Conferencia </a>
+                    <a href="#oradores"> Los Oradores </a>
+                    <a href="#lugar"> El Lugar y la Fecha </a>
+                    <a href="#conviertete"> Conviértete en Orador </a>
+                    <a class="comp" href="./pages/comprar.html">Comprar Tickets</a>
+                </nav>
+            </div>
+
+
+
+            <section id="Conferencia">
+                <!--este div contendedor tendrá la img del palacio del agua. se colocará desde ccs-->
+                <div class="conferencia">
+                    <div class="confe_hijo">
+
+                        <h1>Conferencia Bs. As.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptate optio ad assumenda libero,
+                            Voluptate optio ad assumenda libero,
+                            ae cum eos, exercitationem, dolor molestiae Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Non delectus odio nulla! Similique tenetur doloremque
+                            repudiandae quod placeat alias aliquam natus distinctio cupiditate. Quidem unde rem
+                            ea alias maxime molestiae.
+
+                        </p>
+                        <button class="quieroOrador"> Quiero ser Orador</button>
+                        <button class="compraticket">Comprar Tickets</button>
+                    </div>
+                </div>
+
+            </section>
         </div>
-
-
-
-        <section class="conferencia" id="Conferencia">
-            <!--este div contendedor tendrá la img del palacio del agua. se colocará desde ccs-->
-            <h1>Conferencia Bs. As.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate optio ad assumenda libero,
-                Voluptate optio ad assumenda libero,
-                ae cum eos, exercitationem, dolor molestiae Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Non delectus odio nulla! Similique tenetur doloremque
-                repudiandae quod placeat alias aliquam natus distinctio cupiditate. Quidem unde rem
-                ea alias maxime molestiae.
-            </p>
-            <button class="quieroOrador"> Quiero ser Orador</button>
-            <button class="compraticket">Comprar Tickets</button>
-        </section>
 
     </header>
     <!-- esta es la etiqueta semántica main de mi contenido principal-->
@@ -57,7 +68,7 @@
         <section class="oradores" id="oradores">
             <!--Se usal la etiqueta Section como contendedor debe tener un subtítulo-->
             <!--La etiqueta SPAN sirve para dar estilo a una pate del título o sub,. etiqueta contenedora en línea, herman del DIV-->
-            <h2><span>Conoce a los </span> <br>Oradores</h2>
+            <h2><span class="conoce">Conoce a los </span> <br>Oradores</h2>
 
             <div class="padreCards">
 
@@ -105,18 +116,20 @@
         <!-- *************************Sección de la fecha y el lugar************************-->
         <section id="lugar">
 
-            <div class="lugaryfecha">
+            <div class="padrefecha">
 
                 <div class="fecha">
                     <img src="./assets/img/honolulu.jpg" alt="Img del lugar de la Conferencia">
                 </div>
 
                 <div class="fecha">
-                    <h2>Bs. As. Octubre</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
-                        voluptatum perferendis expedita consequuntur sed numquam, saepe voluptas,
-                    </p>
-                    <button>Conocé más</button>
+                    <div class="fechatxt">
+                        <h2>Bs. As. Octubre</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
+                            voluptatum perferendis expedita consequuntur sed numquam, saepe voluptas,
+                        </p>
+                        <button>Conocé más</button>
+                    </div>
                 </div>
             </div>
         </section>
