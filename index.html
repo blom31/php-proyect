@@ -14,17 +14,19 @@
 <body>
     <!-- esta es la etiqueta semántica header es mi cabecera-->
     <header>
-        <div class="padreheader">
-            <div class="header"> <!-- es una etiqueta contenedora de tipo generico, agrupa cosas, "comodín"-->
 
+        <div class="header"> <!-- es una etiqueta contenedora de tipo generico, agrupa cosas, "comodín"-->
+
+            <div class="headerleft">
                 <img src="./assets/img/codoacodo.png" alt="logo de codo a codo"> <!-- incluir una imagen-->
 
                 <h2> Conf Bs.As.<!-- título -->
-                </h2 >
-
+                </h2>
+            </div>
+            <div>
                 <nav>
                     <!-- esta etiqueta contiene los links o hipervinculos, siempre que veamoes esta etiqueta indica que hay una navegación-->
-                    <a href="#conferencia">La Conferencia </a>
+                    <a class="conf" href="#conferencia">La Conferencia </a>
                     <a href="#oradores"> Los Oradores </a>
                     <a href="#lugar"> El Lugar y la Fecha </a>
                     <a href="#conviertete"> Conviértete en Orador </a>
@@ -32,30 +34,27 @@
                 </nav>
             </div>
 
-
-
-            <section id="Conferencia">
-                <!--este div contendedor tendrá la img del palacio del agua. se colocará desde ccs-->
-                <div class="conferencia">
-                    <div class="confe_hijo">
-
-                        <h1>Conferencia Bs. As.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Voluptate optio ad assumenda libero,
-                            Voluptate optio ad assumenda libero,
-                            ae cum eos, exercitationem, dolor molestiae Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Non delectus odio nulla! Similique tenetur doloremque
-                            repudiandae quod placeat alias aliquam natus distinctio cupiditate. Quidem unde rem
-                            ea alias maxime molestiae.
-
-                        </p>
-                        <button class="quieroOrador"> Quiero ser Orador</button>
-                        <button class="compraticket">Comprar Tickets</button>
-                    </div>
-                </div>
-
-            </section>
         </div>
+        <section id="Conferencia" class="confe">
+            <!--este div contendedor tendrá la img del palacio del agua. se colocará desde ccs-->
+            
+                <div class="confe_hijo">
+
+                    <h1>Conferencia Bs. As.</h1>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra 
+                       comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet.
+                       Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel 
+                       que tenemos para ti. Te esperamos¡
+
+                    </p>
+                    <a href="#conviertete"">Quiero ser Orador</a>
+                    <a class="compraticket" href="./pages/comprar.html">Comprar Tickets</a>
+                   
+                </div>
+            
+
+        </section>
+        
 
     </header>
     <!-- esta es la etiqueta semántica main de mi contenido principal-->
@@ -68,7 +67,7 @@
         <section class="oradores" id="oradores">
             <!--Se usal la etiqueta Section como contendedor debe tener un subtítulo-->
             <!--La etiqueta SPAN sirve para dar estilo a una pate del título o sub,. etiqueta contenedora en línea, herman del DIV-->
-            <h2><span class="conoce">Conoce a los </span> <br>Oradores</h2>
+            <h2><span class="conoce">CONOCE A LOS </span> <br>ORADORES</h2>
 
             <div class="padreCards">
 
@@ -89,7 +88,7 @@
                     <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
                     <div class="cardBody">
                         <h5 class="java">JavaScript</h5>
-                        <h5  class="react">React</h5>
+                        <h5 class="react">React</h5>
                         <h3>Bill Gates</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum
                             voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime
@@ -126,9 +125,12 @@
                     <div class="fechatxt">
                         <h2>Bs. As. Octubre</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
-                            voluptatum perferendis expedita consequuntur sed numquam, saepe voluptas, Lorem ipsum dolor sit,
-                             amet consectetur adipisicing elit. Iste cupiditate dolorem quia at itaque, commodi, natus dolor 
-                             aliquid quaerat, placeat tempore pariatur? Adipisci, nisi blanditiis debitis at vitae odit mollitia.
+                            voluptatum perferendis expedita consequuntur sed numquam, saepe voluptas, Lorem ipsum dolor
+                            sit,
+                            amet consectetur adipisicing elit. Iste cupiditate dolorem quia at itaque, commodi, natus
+                            dolor
+                            aliquid quaerat, placeat tempore pariatur? Adipisci, nisi blanditiis debitis at vitae odit
+                            mollitia.
                         </p>
                         <button>Conocé más</button>
                     </div>
@@ -140,13 +142,13 @@
         <section id="conviertete">
 
             <div class="conviertete">
-                <h2><span>Conviérte </span> <br>Orador</h2>
+                <h2><span class="convierte">CONVIÉRTE EN </span> <br>ORADOR</h2>
                 <h3>Anótate como orador para dar una charla.ignite. Cuéntanos de qué quieres hablar</h3>
 
-                <form>
+                <form class="formulario">
                     <div>
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="text" placeholder="Apellido" required>
+                        <input class="form" type="text"  placeholder="Nombre" required minlength="3" maxlength="12">
+                        <input class="form" type="text" placeholder="Apellido" required required minlength="3" maxlength="20">
                     </div>
                     <div>
                         <textarea name="" id="" cols="46" rows="6" placeholder="Sobre qué quiere hablar"

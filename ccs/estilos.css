@@ -29,107 +29,98 @@ body {
 }
 
 /*estilado del header esto era una prueba en caso de querer dejar la navegación fija*/
-/*header{
-    position: sticky;
-    top: 0px;
-    z-index: 10;
+header {
+    background-color: blueviolet;
+    height: 100vh;
 
-}*/
-.padreheader {
-
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.523), rgb(0, 0, 0, 0.523)), url("../assets/img/hawaii.jpg");
-    background-size: cover;
-    /* **** LAS PROPIEDADES DEL BACKGROUND COLOR SON COPIADAS DEL EJEMPLO -- DEBO PERSONALIZAR*/
-    background-position: center;
-    padding-right: 100px;
-    object-fit: cover;
-    width: 100%;
-    height: 95vh;
-    /*display: flex;*/
 }
 
 .header {
-    background-color: #2f3131;
-    color: white;
-    width: 108%;
-    height: 13%;
-    /*display: inline-block; PROPIEDAD USADA ANTES DEL FLEXBOX*/
+    background-color: rgb(27, 26, 26);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 10%;
 
 }
 
-/*estilado img codo codo*/
-/* DEBO MEJORAR LA CALIDAD DE LA IMAG*/
-.header img {
-    height: 80%;
+.headerleft {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilado del logo codo a codo*/
+.headerleft img {
+    width: 100px;
+    object-fit: cover;
 }
 
 /*estilado del titulo Conf BsAs*/
+.headerleft h2 {
+    color: whitesmoke;
+}
 
 /*estilado de la navegación del header */
 .header nav a {
+    margin-right: 70px;
     text-decoration: none;
     font-family: "Inter";
     font-weight: 600;
     color: darkgray;
-
-    /*word-spacing: 5px;*/
 }
 
+.header nav .conf{
+    color: #e0e4e4;
+}
 /*estilado de la navegación del header última palabra color verde*/
 .header nav .comp {
     color: rgb(5, 131, 5);
 }
-
-/*estilado del header titulo y texto blanco*/
-.conferencia {
-    padding-top: 15%;
-    color: white;
-    font-weight: 500;
+/*estilado contenedor conferencia*/
+.confe {
+    background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
     display: flex;
     justify-content: flex-end;
-    line-height: 1.5;
+    align-items: center; 
+    padding-right: 5rem;   
 }
-
 .confe_hijo {
-    height: 90%;
-    width: 40%;
+    color: white;
+    font-weight: 600;
+    width: 45%;
+    height: 35%;
     text-align: right;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: inline-block;
+    line-height: 28px;
 }
-
-/*estilado del boton quiero ser orador */
-.quieroOrador {
-    background-color: transparent;
+.confe_hijo a{
+   
+    text-decoration: none;
     color: white;
+    border-radius:3px ;
     border: solid 1px rgb(180, 179, 179);
-    border-radius: 3px;
-    height: 25px;
-    margin-top: 20px;
+    }
 
-
-
-}
-
-/*estilado del boton comprar ticket*/
-.compraticket {
-    background-color: rgb(17, 155, 17);
-    color: white;
-    height: 25px;
-    border-radius: 5px;
-    border: solid 3px rgb(17, 155, 17);
-    margin-top: 20px;
-
+.compraticket{
+    background-color:rgb(5, 131, 5) ;
 }
 
 .oradores h2 {
     text-align: center;
-    margin: 2%;
+    margin-bottom: 10px;
+
 }
 
-.oradores .conoce {
+.conoce {
     font-weight: 500;
     font-size: 15px
 }
@@ -141,7 +132,6 @@ body {
     width: 80%;
     height: 110vh;
     margin: 0 auto;
-
 }
 
 .card {
@@ -168,28 +158,30 @@ body {
     display: inline-block;
 }
 
-.java{ 
-    background-color: rgb(221, 201, 24) ;
-    border-radius: 3px; 
+.java {
+    background-color: rgb(221, 201, 24);
+    border-radius: 3px;
     text-align: center;
-
 }
-.react{
+
+.react {
     background-color: rgb(96, 94, 241);
     color: white;
     border-radius: 3px;
     text-align: center;
 }
+
 .negocio {
     background-color: #6a6d6d;
     color: white;
-    border-radius: 3px; 
+    border-radius: 3px;
     text-align: center;
-} 
-.start{
+}
+
+.start {
     background-color: hsl(0, 74%, 54%);
     color: white;
-    border-radius: 3px; 
+    border-radius: 3px;
     text-align: center;
 }
 
@@ -197,30 +189,29 @@ body {
 
 .padrefecha {
     /* margin-top: 1000px;*/
-
+    height: 60vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2f3131;
-    color: white;
-  
 }
-
 
 .fecha img {
     width: 100%;
-    height: 80%;
+    height: 30%;
     object-fit: cover;
 }
 
 .fechatxt {
-   padding-left: 20px;
-   padding-bottom: 200px;
+    background-color: #2f3131;
     color: white;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    height: 58.9vh;
     text-align: left;
 }
-.fechatxt button{
+
+.fechatxt button {
     background-color: transparent;
     color: white;
     border-color: #c8cece;
@@ -231,9 +222,30 @@ body {
 .conviertete {
     text-align: center;
     margin-top: 15px;
+    height: 50vh;
 }
 
+.convierte{
+    font-weight: 500;
+    font-size: 15px;
+   
+}
+.conviertete h3{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form{
+    width: 300px;
+    height: 25px;
+    margin-bottom: 20px;
+}
 footer {
     background-color: rgb(28, 92, 92);
     color: white;
@@ -243,19 +255,15 @@ footer {
     align-items: center;
     justify-content: center;
     word-spacing: 20px;
-
-
     /*position: sticky;
     bottom: 0px;
     z-index: 10;*/
 }
+
 .pie a {
     color: white;
     font-weight: 600;
     text-decoration: none;
-    
-
-
 }
 
 .pie img {
