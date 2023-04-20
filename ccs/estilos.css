@@ -71,13 +71,15 @@ header {
     color: darkgray;
 }
 
-.header nav .conf{
+.header nav .conf {
     color: #e0e4e4;
 }
+
 /*estilado de la navegación del header última palabra color verde*/
 .header nav .comp {
     color: rgb(5, 131, 5);
 }
+
 /*estilado contenedor conferencia*/
 .confe {
     background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/img/ba1.jpg");
@@ -87,12 +89,13 @@ header {
     height: 90%;
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
-    padding-right: 5rem;   
+    align-items: center;
+    padding-right: 5rem;
 }
+
 .confe_hijo {
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     width: 45%;
     height: 35%;
     text-align: right;
@@ -100,18 +103,20 @@ header {
     flex-direction: column;
     justify-content: space-between;
     display: inline-block;
-    line-height: 28px;
+    line-height: 25px;
 }
-.confe_hijo a{
+
+.confe_hijo a {
    
+    margin-left: 20px;
     text-decoration: none;
     color: white;
-    border-radius:5px ;
+    border-radius: 5px;
     border: solid 1px rgb(180, 179, 179);
-    }
+}
 
-.compraticket{
-    background-color:rgb(5, 131, 5) ;
+.compraticket {
+    background-color: rgb(5, 131, 5);
 }
 
 .oradores h2 {
@@ -129,18 +134,20 @@ header {
 
     margin-top: 1000px;
     text-align: left;
+    justify-content: space-between;
     width: 80%;
     height: 110vh;
     margin: 0 auto;
+    display: flex;
 }
 
 .card {
-    display: inline-block;
+    /* display: inline-block;*/
     background-color: white;
     width: 30%;
     height: 80%;
     border: 1px solid rgb(219, 217, 217);
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .card img {
@@ -199,25 +206,28 @@ header {
 .fecha img {
     width: 100%;
     height: 100%;
-    object-fit: cover;    
+    object-fit: cover;
 }
+
 .fecha {
     background-color: #2f3131;
     color: white;
     width: 100%;
     height: 100%;
     text-align: left;
-    
+
 }
-.fechatext{
+
+.fechatext {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 15px;
     padding-top: 15px;
     line-height: 28px;
-    
+
 }
+
 .fechatext button {
     background-color: transparent;
     color: white;
@@ -236,32 +246,34 @@ header {
     flex-direction: column;
 }
 
-.convierte{
+.convierte {
     font-weight: 500;
     font-size: 15px;
-   
+
 }
-.conviertete h3{
+
+.conviertete h3 {
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.form{
-    width: 300px;
+.form {
+    width: 200px;
     height: 25px;
     margin-bottom: 20px;
 }
 
-.formulario p{
+.formulario p {
     text-align: center;
-    
+
 }
+
 footer {
     background-color: rgb(28, 92, 92);
     color: white;
@@ -269,7 +281,7 @@ footer {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     word-spacing: 20px;
     /*position: sticky;
     bottom: 0px;
@@ -288,4 +300,25 @@ footer {
     bottom: 25px;
     right: 20px;
     width: 3%;
+}
+
+/*diseño de las media queries en pantall de 320px (celu) a 767 (tablet)*/
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        background-color: rgb(177, 223, 109);
+        height: initial;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .confe {
+        justify-content: center;
+
+    }
+
+    .padreCards {
+        flex-direction: column;
+    }
 }
