@@ -8,7 +8,9 @@
     <title>Proyecto</title>
     <!-- la siguiente línea linkea el index con la hoja de estilos-->
     <link rel="stylesheet" href="./ccs/estilos.css">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="48x48">
 </head>
 
 <body>
@@ -58,8 +60,7 @@
 
 
     </header>
-    <!-- esta es la etiqueta semántica main de mi contenido principal-->
-    <!-- esta es la etiqueta semántica main de mi contenido principal-->
+ 
     <!-- esta es la etiqueta semántica main de mi contenido principal-->
 
 
@@ -145,7 +146,7 @@
 
             <div class="conviertete">
                 <h2><span class="convierte">CONVIÉRTE EN </span> <br>ORADOR</h2>
-                <h3>Anótate como orador para dar una charla.ignite. Cuéntanos de qué quieres hablar</h3>
+                <h3>Anótate como orador para dar una charla.ignite. Cuéntanos de qué quieres hablar!</h3>
 
                 <form class="formulario">
                     <div>
@@ -154,14 +155,14 @@
                             maxlength="20">
                     </div>
                     <div>
-                        <textarea name="" id="" cols="52" rows="6" placeholder="Sobre qué quiere hablar"
-                            required></textarea>
+                        <textarea class="formtexto"" name="" id="" cols=" 52" rows="6"
+                            placeholder="Sobre qué quieres hablar" required></textarea>
                     </div>
                     <p>Recuerda incluir un título para tu charla</p>
 
-                    <div>
-                        <input type="submit" value="Enviar Formulario">
-                        <input type="reset" value="Limpiar formulario">
+                    <div class="enviar">
+                        <input type="submit" value="Enviar">
+
                     </div>
                 </form>
             </div>
@@ -171,17 +172,23 @@
     </main>
     <!-- esta es la etiqueta semántica footer es mi pie de página-->
     <footer>
-        <div class="pie">
-            <a href="">Preguntas Frecuentes</a>
-            <a href="">Contáctanos</a>
-            <a href="">Prensa</a>
-            <a href=""> Conferencias</a>
-            <a href="">Términos y Condiciones</a>
-            <a href="">Privacidad</a>
-            <a href=""> Estudiantes</a>
-        </div>
-        <div class="pie">
-            <img src="./assets/img/whatsapp_icon.png" alt="Contacto de whatsapp para contactarnos">
+        <div class="contpie">
+            <div class="menu">
+                <a href="">Preguntas<br> frecuentes</a>
+                <a href="">Contáctanos</a>
+                <a href="">Prensa</a>
+                <a href=""> Conferencias</a>
+                <a href="">Términos y Condiciones</a>
+                <a href="">Privacidad</a>
+                <a href=""> Estudiantes</a>
+            </div>
+            <div>
+                <a href="https://buenosaires.gob.ar/educacion/codo-codo-40"><img
+                        src="./assets/img/logo_gob_ciudad-removebg-preview.png"
+                        alt="Boti de la pagina del gobierno de la ciudad"></a>
+
+
+            </div>
         </div>
 
     </footer>

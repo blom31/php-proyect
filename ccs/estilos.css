@@ -1,38 +1,32 @@
-/*comentarios en css*/
-/* por cada proyecto una hoja de estilo*/
-/*sintaxis básicas de css*/
-/*3 selectores principales
-selector de etiqueta - el menos específico, es la etiqueta del html
-selector de class - nivel intermedio, se llama con el punto y el nombre de la clase .body - .cabecera
-selector de id - el más específico es un identificador único se llama con #
-
-<script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
-
-
-*/
+/*<script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700&family=Noto+Sans:ital,wght@0,100;1,100&display=swap');
 
 * {
+    /*limpia margenes*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*fuente importada de Google*/
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/font/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 /* estilado del cuerpo de la pág*/
 body {
     color: rgb(31, 36, 36);
     font-family: "Inter", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     /*font-size: 1rem;
     line-height: 1.5;*/
 }
 
-/*estilado del header esto era una prueba en caso de querer dejar la navegación fija*/
+/*estilado del header */
 header {
-    background-color: blueviolet;
     height: 100vh;
-
 }
 
 .header {
@@ -41,10 +35,10 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 10%;
-
 }
 
 .headerleft {
+    /*contenedor de la img de codo a codo y el título*/
     margin-left: 40px;
     display: flex;
     justify-content: center;
@@ -55,11 +49,12 @@ header {
 .headerleft img {
     width: 100px;
     object-fit: cover;
+    /*ajusta la img a su contenedor*/
 }
 
 /*estilado del titulo Conf BsAs*/
 .headerleft h2 {
-    color: whitesmoke;
+    color: white;
 }
 
 /*estilado de la navegación del header */
@@ -69,6 +64,7 @@ header {
     font-family: "Inter";
     font-weight: 600;
     color: darkgray;
+
 }
 
 .header nav .conf {
@@ -82,6 +78,7 @@ header {
 
 /*estilado contenedor conferencia*/
 .confe {
+    /*imagen de fondo ndel header*/
     background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/img/ba1.jpg");
     background-size: cover;
     background-position: center;
@@ -94,6 +91,7 @@ header {
 }
 
 .confe_hijo {
+    /*texto de la img de fondo del header*/
     color: white;
     font-weight: 300;
     width: 45%;
@@ -103,23 +101,33 @@ header {
     flex-direction: column;
     justify-content: space-between;
     display: inline-block;
-    line-height: 25px;
+
 }
 
 .confe_hijo a {
-   
+    /*boton transparante*/
+    line-height: 55px;
     margin-left: 20px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
     border: solid 1px rgb(180, 179, 179);
+
 }
 
-.compraticket {
+.confe_hijo .compraticket {
+    /*bonton de comprar tickets*/
     background-color: rgb(5, 131, 5);
+    border: solid 1px rgb(5, 131, 5);
+}
+
+.oradores {
+    /*contenedor de los oradores*/
+    height: 100vh;
 }
 
 .oradores h2 {
+    /*título de los oradores*/
     text-align: center;
     margin-bottom: 10px;
 
@@ -131,21 +139,22 @@ header {
 }
 
 .padreCards {
+    /*contenedor de las 3 tarjetas*/
 
     margin-top: 1000px;
     text-align: left;
-    justify-content: space-between;
     width: 80%;
-    height: 110vh;
+    height: 110%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .card {
-    /* display: inline-block;*/
+    /* display: inline-block;  sustituido por flexbox*/
     background-color: white;
     width: 30%;
-    height: 80%;
+    height: 75%;
     border: 1px solid rgb(219, 217, 217);
     border-radius: 7px;
 }
@@ -195,7 +204,7 @@ header {
 /*estilado de lugar y fecha*/
 
 .padrefecha {
-    /* margin-top: 1000px;*/
+
     height: 60vh;
     margin: 0 auto;
     display: flex;
@@ -204,9 +213,11 @@ header {
 }
 
 .fecha img {
+    /*imagen de honolulu*/
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 1px solid white;
 }
 
 .fecha {
@@ -215,10 +226,13 @@ header {
     width: 100%;
     height: 100%;
     text-align: left;
+    border:
+        1px solid white;
 
 }
 
 .fechatext {
+    /*contenido del lugar , txt al lado  de la img Honolulu*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -239,6 +253,7 @@ header {
 }
 
 .conviertete {
+    /*contenedor del conviértete en orador y formulario*/
     text-align: center;
     margin-top: 15px;
     height: 50vh;
@@ -253,72 +268,389 @@ header {
 }
 
 .conviertete h3 {
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
 .formulario {
+    /*contenedor formulario*/
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .form {
-    width: 200px;
+    width: 430px;
     height: 25px;
     margin-bottom: 20px;
 }
 
 .formulario p {
-    text-align: center;
+    font-size: 15px;
+    margin-right: 580px;
+}
 
+.formtexto {
+    width: 865px;
+}
+
+.enviar input {
+    background-color: rgb(54, 233, 69);
+    margin-top: 5px;
+    width: 860px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 footer {
     background-color: rgb(28, 92, 92);
-    color: white;
-    height: 15vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    word-spacing: 20px;
-    /*position: sticky;
-    bottom: 0px;
-    z-index: 10;*/
+    height: 10vh;
 }
 
-.pie a {
+.contpie {
+
+    height: 100%;
+    display: flex;
+
+}
+
+.menu {
+    width: 90%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.menu a {
     color: white;
     font-weight: 600;
     text-decoration: none;
 }
 
-.pie img {
-
+.contpie a img {
+    /*estilo del boti de BA*/
     position: fixed;
-    bottom: 25px;
-    right: 20px;
-    width: 3%;
+    bottom: 55px;
+    right: 30px;
+    width: 6%;
 }
 
-/*diseño de las media queries en pantall de 320px (celu) a 767 (tablet)*/
+/*diseño responsive*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
 
     .header {
-        background-color: rgb(177, 223, 109);
+        background-color: rgb(27, 26, 26);
+        height: initial;
+      
+    }
+
+    .header nav {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .confe {
+        justify-content: end
+    }
+
+    .oradores {
+        height: initial;
+    }
+
+    .oradores h2 {
+        margin-top: 45px;
+    }
+
+    .padreCards {
+        height: initial;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fechatext {
+        line-height: 20px;
+    }
+
+    .conviertete {
+        height: initial;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+
+    .contpie a img {
+        bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .header {
+      
         height: initial;
         flex-direction: column;
         justify-content: center;
     }
 
-    .confe {
-        justify-content: center;
+    .header nav {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
 
+    .confe {
+        justify-content: end
+    }
+
+    .oradores {
+        height: initial;
+    }
+
+    .oradores h2 {
+        margin-top: 60px;
     }
 
     .padreCards {
+        height: initial;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fechatext {
+        line-height: 20px;
+    }
+
+    .formtexto {
+        width: 500px;
+    }
+
+    .formulario p {
+        margin-right: 80px;
+    }
+
+    .enviar input {
+        width: 510px;
+        height: 22px;
+        font-size: 15px;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .contpie div a img {
+        margin-bottom: 40px;
+        margin-right: 1px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+       
+        height: initial;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header nav {
+
+        display: flex;
         flex-direction: column;
+    }
+
+    .confe_hijo {
+
+        height: initial;
+        width: 60%;
+        font-size: 13px;
+        margin-top: 60px;
+
+    }
+
+    .confe_hijo a {
+
+        line-height: 25px;
+    }
+
+    .oradores {
+        height: initial;
+
+    }
+
+    .oradores h2 {
+        margin-top: 120px;
+    }
+
+    .padreCards {
+        height: initial;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+
+    .padrefecha {
+        height: initial;
+        flex-direction: column;
+    }
+
+    .fecha img {
+        height: 35vh;
+    }
+
+    .fechatext {
+        font-size: 12px;
+    }
+
+    .fechatext button {
+        margin-bottom: 5px;
+    }
+
+    .formtexto {
+        width: 500px;
+    }
+
+    .conviertete h3 {
+        font-weight: 200;
+        font-size: 13px;
+    }
+
+
+    .formulario p {
+        margin-right: 80px;
+    }
+
+    .enviar input {
+        width: 410px;
+        height: 22px;
+        font-size: 15px;
+    }
+
+    footer {
+        height: initial;
+        margin-top: 5px;
+    }
+
+
+    .contpie div a img {
+
+        margin-bottom: 40px;
+        margin-right: 1px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header nav {
+
+        display: flex;
+
+    }
+
+    .confe {
+
+        height: 80%;
+    }
+
+    .confe_hijo {
+
+        height: initial;
+        width: initial;
+        font-size: 13px;
+
+
+    }
+
+    .confe_hijo a {
+
+        line-height: 25px;
+    }
+
+    .oradores {
+        height: initial;
+
+    }
+
+    .oradores h2 {
+        margin-top: 120px;
+    }
+
+    .padreCards {
+        height: initial;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .padrefecha {
+        height: initial;
+        flex-direction: column;
+    }
+
+    .fecha img {
+        height: 35vh;
+    }
+
+    .fechatext {
+        font-size: 12px;
+    }
+
+    .fechatext button {
+        margin-bottom: 5px;
+    }
+
+    .formtexto {
+        width: 500px;
+    }
+
+    .conviertete h3 {
+        font-weight: 200;
+        font-size: 13px;
+    }
+
+
+    .formulario p {
+        margin-right: 80px;
+    }
+
+    .enviar input {
+        width: 410px;
+        height: 22px;
+        font-size: 15px;
+    }
+
+    footer {
+        height: initial;
+        margin-top: 5px;
+    }
+
+    .menu {
+        height: initial;
+        flex-direction: column;
+    }
+
+    .contpie div a img {
+
+        margin-bottom: 70px;
+        margin-right: 1px;
     }
 }
