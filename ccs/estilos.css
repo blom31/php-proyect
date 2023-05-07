@@ -204,7 +204,6 @@ header {
 /*estilado de lugar y fecha*/
 
 .padrefecha {
-
     height: 60vh;
     margin: 0 auto;
     display: flex;
@@ -518,10 +517,12 @@ footer {
         margin-bottom: 5px;
     }
 
-    .formtexto {
-        width: 500px;
+    .form{
+        width: 400px;
     }
-
+    .formtexto {
+        width: 400px;
+    }
     .conviertete h3 {
         font-weight: 200;
         font-size: 13px;
@@ -559,23 +560,17 @@ footer {
     }
 
     .header nav {
-
         display: flex;
-
     }
 
     .confe {
-
         height: 80%;
     }
 
     .confe_hijo {
-
         height: initial;
         width: initial;
         font-size: 13px;
-        
-
     }
 
     .confe_hijo a {
@@ -585,7 +580,6 @@ footer {
 
     .oradores {
         height: initial;
-
     }
 
     .oradores h2 {
@@ -637,7 +631,7 @@ footer {
     }
 
     .enviar input {
-        width: 410px;
+        width: 300px;
         height: 22px;
         font-size: 15px;
     }
